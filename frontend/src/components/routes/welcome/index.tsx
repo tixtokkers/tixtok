@@ -1,17 +1,18 @@
-import {useGetMe} from "../../../queries/useGetMe.ts";
-import {useGetOrganizers} from "../../../queries/useGetOrganizers.ts";
-import {t, Trans} from "@lingui/macro";
-import {Card} from "../../common/Card";
-import {Button, SimpleGrid, TextInput} from "@mantine/core";
+import { useGetMe } from "../../../queries/useGetMe.ts";
+import { useGetOrganizers } from "../../../queries/useGetOrganizers.ts";
+import { t, Trans } from "@lingui/macro";
+import { Card } from "../../common/Card";
+import { Button, SimpleGrid, TextInput } from "@mantine/core";
 import classes from "./Welcome.module.scss";
-import {useForm} from "@mantine/form";
-import {Event} from "../../../types.ts";
-import {useCreateEvent} from "../../../mutations/useCreateEvent.ts";
-import {NavLink, useNavigate} from "react-router-dom";
-import {useEffect} from "react";
-import {useGetEvents} from "../../../queries/useGetEvents.ts";
-import {LoadingContainer} from "../../common/LoadingContainer";
-import {OrganizerCreateForm} from "../../forms/OrganizerForm";
+import { useForm } from "@mantine/form";
+import { Event } from "../../../types.ts";
+import { useCreateEvent } from "../../../mutations/useCreateEvent.ts";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useGetEvents } from "../../../queries/useGetEvents.ts";
+import { LoadingContainer } from "../../common/LoadingContainer";
+import { OrganizerCreateForm } from "../../forms/OrganizerForm";
+import { getConfig } from "../../../utilites/config.ts";
 
 export const CreateOrganizer = () => {
     return (
@@ -22,41 +23,47 @@ export const CreateOrganizer = () => {
             <p className={classes.sectionDescription}>
                 {t`An organizer is the company or person who is hosting the event`}
             </p>
-            <OrganizerCreateForm/>
+            <OrganizerCreateForm />
         </>
     );
-}
+};
 
 export const CreateEvent = () => {
     const form = useForm({
         initialValues: {
-            title: '',
+            title: "",
             start_date: undefined,
             end_date: undefined,
-        }
+        },
     });
     const eventMutation = useCreateEvent();
     const navigate = useNavigate();
-    const {data: organizers, isFetched: organizersFetched} = useGetOrganizers();
-    const {data: events, isFetched: eventsFetched} = useGetEvents({
+    const { data: organizers, isFetched: organizersFetched } =
+        useGetOrganizers();
+    const { data: events, isFetched: eventsFetched } = useGetEvents({
         pageNumber: 1,
     });
 
     const handleSubmit = (values: Partial<Event>) => {
-        eventMutation.mutate({
-            eventData: values,
-        }, {
-            onSuccess: (values) => {
-                navigate(`/manage/event/${values.data.id}/getting-started?new_event=true`)
+        eventMutation.mutate(
+            {
+                eventData: values,
+            },
+            {
+                onSuccess: (values) => {
+                    navigate(
+                        `/manage/event/${values.data.id}/getting-started?new_event=true`
+                    );
+                },
             }
-        });
-    }
+        );
+    };
 
     useEffect(() => {
         if (organizersFetched) {
-            const organizerName = organizers?.data?.[0].name
-            form.setFieldValue('organizer_id', organizers?.data?.[0].id);
-            form.setFieldValue('title', t`${organizerName}'s first event`);
+            const organizerName = organizers?.data?.[0].name;
+            form.setFieldValue("organizer_id", organizers?.data?.[0].id);
+            form.setFieldValue("title", t`${organizerName}'s first event`);
         }
     }, [organizersFetched]);
 
@@ -78,30 +85,30 @@ export const CreateEvent = () => {
             <form onSubmit={form.onSubmit(handleSubmit)}>
                 <fieldset disabled={eventMutation.isPending}>
                     <TextInput
-                        {...form.getInputProps('title')}
+                        {...form.getInputProps("title")}
                         required
                         label={t`Name`}
                         placeholder={t`Awesome Event`}
                     />
                     <SimpleGrid cols={2} spacing={20}>
                         <TextInput
-                            {...form.getInputProps('start_date')}
+                            {...form.getInputProps("start_date")}
                             required
                             label={t`Start Date`}
                             placeholder={t`2024-01-01 10:00`}
-                            type={'datetime-local'}
+                            type={"datetime-local"}
                         />
                         <TextInput
-                            {...form.getInputProps('end_date')}
+                            {...form.getInputProps("end_date")}
                             label={t`End Date`}
                             placeholder={t`2024-01-01 18:00`}
-                            type={'datetime-local'}
+                            type={"datetime-local"}
                         />
                     </SimpleGrid>
 
                     <Button
-                        type={'submit'}
-                        color={'green'}
+                        type={"submit"}
+                        color={"green"}
                         fullWidth
                         loading={eventMutation.isPending}
                     >
@@ -111,35 +118,34 @@ export const CreateEvent = () => {
             </form>
         </LoadingContainer>
     );
-}
+};
+
+const APP_NAME = getConfig("VITE_APP_NAME");
 
 const Welcome = () => {
-    const {data: userData} = useGetMe();
+    const { data: userData } = useGetMe();
     const organizersQuery = useGetOrganizers();
     const organizers = organizersQuery?.data?.data;
-    const organizerExists = organizersQuery.isFetched && Number(organizers?.length) > 0;
+    const organizerExists =
+        organizersQuery.isFetched && Number(organizers?.length) > 0;
 
     return (
         <>
             <h1>
                 <Trans>
-                    Welcome to Hi.Events, {userData?.first_name} 👋
+                    Welcome to {APP_NAME}, {userData?.first_name} 👋
                 </Trans>
             </h1>
             <Card>
-                {organizerExists ? <CreateEvent/> : <CreateOrganizer/>}
+                {organizerExists ? <CreateEvent /> : <CreateOrganizer />}
             </Card>
             {organizerExists && (
                 <div className={classes.skip}>
-                    <NavLink
-                        to={'/manage/events'}
-                    >
-                        {t`Skip this step`}
-                    </NavLink>
+                    <NavLink to={"/manage/events"}>{t`Skip this step`}</NavLink>
                 </div>
             )}
         </>
-    )
-}
+    );
+};
 
 export default Welcome;
