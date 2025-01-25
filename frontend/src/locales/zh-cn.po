@@ -65,7 +65,7 @@ msgstr "{hours} 小时, {minutes} 分钟, 和 {seconds} 秒"
 msgid "{minutes} minutes and {seconds} seconds"
 msgstr "{分}分钟和{秒}秒钟"
 
-#: src/components/routes/welcome/index.tsx:59
+#: src/components/routes/welcome/index.tsx:66
 msgid "{organizerName}'s first event"
 msgstr "{组织者名称}的首次活动"
 
@@ -133,11 +133,11 @@ msgstr "缅因街 123 号"
 msgid "20"
 msgstr "20"
 
-#: src/components/routes/welcome/index.tsx:91
+#: src/components/routes/welcome/index.tsx:98
 msgid "2024-01-01 10:00"
 msgstr "2024-01-01 10:00"
 
-#: src/components/routes/welcome/index.tsx:97
+#: src/components/routes/welcome/index.tsx:104
 msgid "2024-01-01 18:00"
 msgstr "2024-01-01 18:00"
 
@@ -381,11 +381,11 @@ msgstr "问题排序时发生错误。请重试或刷新页面"
 msgid "An error occurred while sorting the tickets. Please try again or refresh the page"
 msgstr "在整理门票时发生错误。请重试或刷新页面"
 
-#: src/components/routes/welcome/index.tsx:75
+#: src/components/routes/welcome/index.tsx:82
 msgid "An event is the actual event you are hosting. You can add more details later."
 msgstr "事件是您要举办的实际活动。您可以稍后添加更多细节。"
 
-#: src/components/routes/welcome/index.tsx:23
+#: src/components/routes/welcome/index.tsx:24
 msgid "An organizer is the company or person who is hosting the event"
 msgstr "主办方是指举办活动的公司或个人"
 
@@ -522,7 +522,7 @@ msgstr "根据内容自动调整 widget 高度。禁用时，窗口小部件将�
 msgid "Awaiting Payment"
 msgstr "等待付款"
 
-#: src/components/routes/welcome/index.tsx:84
+#: src/components/routes/welcome/index.tsx:91
 msgid "Awesome Event"
 msgstr "精彩活动"
 
@@ -975,7 +975,7 @@ msgstr "创建签到列表"
 #: src/components/common/NoEventsBlankSlate/index.tsx:27
 #: src/components/modals/CreateEventModal/index.tsx:86
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:81
-#: src/components/routes/welcome/index.tsx:108
+#: src/components/routes/welcome/index.tsx:115
 msgid "Create Event"
 msgstr "创建活动"
 
@@ -1252,8 +1252,8 @@ msgstr "编辑 {0}"
 msgid "Edit attendee"
 msgstr "编辑与会者"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:72
-#: src/components/modals/EditAttendeeModal/index.tsx:129
+#: src/components/modals/EditAttendeeModal/index.tsx:84
+#: src/components/modals/EditAttendeeModal/index.tsx:141
 msgid "Edit Attendee"
 msgstr "编辑参会者"
 
@@ -1337,7 +1337,7 @@ msgid "Email & Notification Settings"
 msgstr "电子邮件和通知设置"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:128
-#: src/components/modals/EditAttendeeModal/index.tsx:91
+#: src/components/modals/EditAttendeeModal/index.tsx:103
 msgid "Email address"
 msgstr "电子邮件地址"
 
@@ -1389,7 +1389,7 @@ msgstr "启用此容量以在达到限制时停止售票"
 #: src/components/modals/CreateEventModal/index.tsx:150
 #: src/components/modals/DuplicateEventModal/index.tsx:97
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:92
-#: src/components/routes/welcome/index.tsx:96
+#: src/components/routes/welcome/index.tsx:103
 msgid "End Date"
 msgstr "结束日期"
 
@@ -1540,7 +1540,7 @@ msgstr "费用"
 
 #: src/components/common/QuestionsTable/index.tsx:206
 #: src/components/modals/CreateAttendeeModal/index.tsx:114
-#: src/components/modals/EditAttendeeModal/index.tsx:77
+#: src/components/modals/EditAttendeeModal/index.tsx:89
 #: src/components/routes/ticket-widget/CollectInformation/index.tsx:268
 #: src/components/routes/ticket-widget/CollectInformation/index.tsx:315
 msgid "First name"
@@ -1747,7 +1747,7 @@ msgstr "主页设计师"
 msgid "Homepage Preview"
 msgstr "主页预览"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:78
+#: src/components/modals/EditAttendeeModal/index.tsx:90
 msgid "Homer"
 msgstr "荷马"
 
@@ -1891,7 +1891,7 @@ msgid "Last login"
 msgstr "最后登录"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:121
-#: src/components/modals/EditAttendeeModal/index.tsx:84
+#: src/components/modals/EditAttendeeModal/index.tsx:96
 msgid "Last name"
 msgstr "姓氏"
 
@@ -1913,7 +1913,7 @@ msgstr "姓氏"
 msgid "Learn more about Stripe"
 msgstr "进一步了解 Stripe"
 
-#: src/components/routes/welcome/index.tsx:20
+#: src/components/routes/welcome/index.tsx:21
 msgid "Let's get started by creating your first organizer"
 msgstr "让我们从创建第一个组织者开始吧"
 
@@ -2087,7 +2087,7 @@ msgstr "Nam placerat elementum..."
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:63
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:72
 #: src/components/routes/ticket-widget/OrderSummaryAndTickets/index.tsx:58
-#: src/components/routes/welcome/index.tsx:83
+#: src/components/routes/welcome/index.tsx:90
 msgid "Name"
 msgstr "名称"
 
@@ -2208,7 +2208,7 @@ msgstr "通知买方退款"
 msgid "Notify organizer of new orders"
 msgstr "将新订单通知组织者"
 
-#: src/components/routes/welcome/index.tsx:72
+#: src/components/routes/welcome/index.tsx:79
 msgid "Now let's create your first event"
 msgstr "现在，让我们创建第一个事件"
 
@@ -2513,7 +2513,7 @@ msgstr "葡萄牙语"
 msgid "Post Checkout message"
 msgstr "结账后信息"
 
-#: src/components/common/PoweredByFooter/index.tsx:28
+#: src/components/common/PoweredByFooter/index.tsx:40
 msgid "Powered by"
 msgstr "技术支持"
 
@@ -2861,7 +2861,7 @@ msgid "Select Ticket"
 msgstr "选择机票"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:163
-#: src/components/modals/EditAttendeeModal/index.tsx:117
+#: src/components/modals/EditAttendeeModal/index.tsx:129
 msgid "Select Ticket Tier"
 msgstr "选择票价等级"
 
@@ -2976,7 +2976,7 @@ msgstr "在顾客结账前向他们展示"
 msgid "Shows common address fields, including country"
 msgstr "显示常用地址字段，包括国家"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:85
+#: src/components/modals/EditAttendeeModal/index.tsx:97
 msgid "Simpson"
 msgstr "辛普森"
 
@@ -2984,7 +2984,7 @@ msgstr "辛普森"
 msgid "Single line text box"
 msgstr "单行文本框"
 
-#: src/components/routes/welcome/index.tsx:137
+#: src/components/routes/welcome/index.tsx:144
 msgid "Skip this step"
 msgstr "跳过此步骤"
 
@@ -3059,7 +3059,7 @@ msgstr "固定价格标准票"
 #: src/components/modals/CreateEventModal/index.tsx:145
 #: src/components/modals/DuplicateEventModal/index.tsx:92
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:87
-#: src/components/routes/welcome/index.tsx:90
+#: src/components/routes/welcome/index.tsx:97
 msgid "Start Date"
 msgstr "开始日期"
 
@@ -3126,7 +3126,7 @@ msgstr "成功创建问题"
 msgid "Successfully Created Ticket"
 msgstr "成功创建票单"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:60
+#: src/components/modals/EditAttendeeModal/index.tsx:72
 msgid "Successfully updated attendee"
 msgstr "成功更新与会者"
 
@@ -3409,7 +3409,7 @@ msgstr "入场券"
 #: src/components/common/AttendeeDetails/index.tsx:46
 #: src/components/common/AttendeeTable/index.tsx:112
 #: src/components/modals/CreateAttendeeModal/index.tsx:146
-#: src/components/modals/EditAttendeeModal/index.tsx:108
+#: src/components/modals/EditAttendeeModal/index.tsx:120
 #: src/components/modals/ViewAttendeeModal/index.tsx:55
 msgid "Ticket"
 msgstr "门票"
@@ -3427,7 +3427,7 @@ msgid "Ticket Sales"
 msgstr "门票销售"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:161
-#: src/components/modals/EditAttendeeModal/index.tsx:115
+#: src/components/modals/EditAttendeeModal/index.tsx:127
 msgid "Ticket Tier"
 msgstr "门票等级"
 
@@ -3740,9 +3740,9 @@ msgstr "欢迎加入！请登录以继续。"
 msgid "Welcome back{0} 👋"
 msgstr "欢迎回来{0} 👋"
 
-#: src/components/routes/welcome/index.tsx:125
-msgid "Welcome to Hi.Events, {0} 👋"
-msgstr "欢迎来到 Hi.Events, {0} 👋"
+#: src/components/routes/welcome/index.tsx:135
+msgid "Welcome to {APP_NAME}, {0} 👋"
+msgstr ""
 
 #: src/components/forms/TicketForm/index.tsx:202
 msgid "What are Tiered Tickets?"
@@ -3805,7 +3805,7 @@ msgstr "工作"
 #: src/components/modals/CreateQuestionModal/index.tsx:73
 #: src/components/modals/CreateTicketModal/index.tsx:91
 #: src/components/modals/DuplicateEventModal/index.tsx:137
-#: src/components/modals/EditAttendeeModal/index.tsx:129
+#: src/components/modals/EditAttendeeModal/index.tsx:141
 #: src/components/modals/EditPromoCodeModal/index.tsx:84
 #: src/components/modals/EditQuestionModal/index.tsx:99
 #: src/components/modals/EditTicketModal/index.tsx:104

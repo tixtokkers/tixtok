@@ -1,11 +1,17 @@
-import React, {FC, PropsWithChildren, useEffect, useRef, useState} from "react";
-import {MantineProvider} from "@mantine/core";
-import {Notifications} from "@mantine/notifications";
-import {i18n} from "@lingui/core";
-import {I18nProvider} from "@lingui/react";
-import {ModalsProvider} from "@mantine/modals";
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import {Helmet, HelmetProvider} from "react-helmet-async";
+import React, {
+    FC,
+    PropsWithChildren,
+    useEffect,
+    useRef,
+    useState,
+} from "react";
+import { MantineProvider } from "@mantine/core";
+import { Notifications } from "@mantine/notifications";
+import { i18n } from "@lingui/core";
+import { I18nProvider } from "@lingui/react";
+import { ModalsProvider } from "@mantine/modals";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "@mantine/core/styles/global.css";
 import "@mantine/core/styles.css";
@@ -14,15 +20,18 @@ import "@mantine/tiptap/styles.css";
 import "@mantine/dropzone/styles.css";
 import "@mantine/charts/styles.css";
 import "./styles/global.scss";
-import {isSsr} from "./utilites/helpers.ts";
-import {dynamicActivateLocale, getSupportedLocale} from "./locales";
-import {StartupChecks} from "./StartupChecks.tsx";
+import { isSsr } from "./utilites/helpers.ts";
+import { dynamicActivateLocale, getSupportedLocale } from "./locales";
+import { StartupChecks } from "./StartupChecks.tsx";
+import { getConfig } from "./utilites/config.ts";
 
 declare global {
     interface Window {
         hievents: Record<string, string>;
     }
 }
+
+const APP_NAME = getConfig("VITE_APP_NAME");
 
 export const App: FC<
     PropsWithChildren<{
@@ -38,7 +47,9 @@ export const App: FC<
     useEffect(() => {
         if (!localeActivated.current && typeof window !== "undefined") {
             localeActivated.current = true;
-            dynamicActivateLocale(getSupportedLocale(props.locale)).then(() => setLoaded(true));
+            dynamicActivateLocale(getSupportedLocale(props.locale)).then(() =>
+                setLoaded(true)
+            );
         }
         setIsLoadedOnBrowser(!isSsr());
     }, []);
@@ -83,14 +94,14 @@ export const App: FC<
                 <HelmetProvider context={props.helmetContext}>
                     <I18nProvider i18n={i18n}>
                         <QueryClientProvider client={props.queryClient}>
-                            <StartupChecks/>
+                            <StartupChecks />
                             <ModalsProvider>
                                 <Helmet>
-                                    <title>Hi.Events</title>
+                                    <title>{APP_NAME}</title>
                                 </Helmet>
                                 {props.children}
                             </ModalsProvider>
-                            <Notifications/>
+                            <Notifications />
                         </QueryClientProvider>
                     </I18nProvider>
                 </HelmetProvider>

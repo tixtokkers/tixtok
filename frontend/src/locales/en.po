@@ -85,7 +85,7 @@ msgstr "{hours} hours, {minutes} minutes, and {seconds} seconds"
 msgid "{minutes} minutes and {seconds} seconds"
 msgstr "{minutes} minutes and {seconds} seconds"
 
-#: src/components/routes/welcome/index.tsx:59
+#: src/components/routes/welcome/index.tsx:66
 msgid "{organizerName}'s first event"
 msgstr "{organizerName}'s first event"
 
@@ -173,11 +173,11 @@ msgstr "123 Main Street"
 msgid "20"
 msgstr "20"
 
-#: src/components/routes/welcome/index.tsx:91
+#: src/components/routes/welcome/index.tsx:98
 msgid "2024-01-01 10:00"
 msgstr "2024-01-01 10:00"
 
-#: src/components/routes/welcome/index.tsx:97
+#: src/components/routes/welcome/index.tsx:104
 msgid "2024-01-01 18:00"
 msgstr "2024-01-01 18:00"
 
@@ -469,11 +469,11 @@ msgstr "An error occurred while sorting the tickets. Please try again or refresh
 #~ msgid "An event is the actual event you are hosting"
 #~ msgstr "An event is the actual event you are hosting"
 
-#: src/components/routes/welcome/index.tsx:75
+#: src/components/routes/welcome/index.tsx:82
 msgid "An event is the actual event you are hosting. You can add more details later."
 msgstr "An event is the actual event you are hosting. You can add more details later."
 
-#: src/components/routes/welcome/index.tsx:23
+#: src/components/routes/welcome/index.tsx:24
 msgid "An organizer is the company or person who is hosting the event"
 msgstr "An organizer is the company or person who is hosting the event"
 
@@ -626,7 +626,7 @@ msgstr "Automatically resize the widget height based on the content. When disabl
 msgid "Awaiting Payment"
 msgstr "Awaiting Payment"
 
-#: src/components/routes/welcome/index.tsx:84
+#: src/components/routes/welcome/index.tsx:91
 msgid "Awesome Event"
 msgstr "Awesome Event"
 
@@ -1138,7 +1138,7 @@ msgstr "Create Check-In List"
 #: src/components/common/NoEventsBlankSlate/index.tsx:27
 #: src/components/modals/CreateEventModal/index.tsx:86
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:81
-#: src/components/routes/welcome/index.tsx:108
+#: src/components/routes/welcome/index.tsx:115
 msgid "Create Event"
 msgstr "Create Event"
 
@@ -1467,8 +1467,8 @@ msgstr "Edit {0}"
 msgid "Edit attendee"
 msgstr "Edit attendee"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:72
-#: src/components/modals/EditAttendeeModal/index.tsx:129
+#: src/components/modals/EditAttendeeModal/index.tsx:84
+#: src/components/modals/EditAttendeeModal/index.tsx:141
 msgid "Edit Attendee"
 msgstr "Edit Attendee"
 
@@ -1552,7 +1552,7 @@ msgid "Email & Notification Settings"
 msgstr "Email & Notification Settings"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:128
-#: src/components/modals/EditAttendeeModal/index.tsx:91
+#: src/components/modals/EditAttendeeModal/index.tsx:103
 msgid "Email address"
 msgstr "Email address"
 
@@ -1612,7 +1612,7 @@ msgstr "Enable this capacity to stop ticket sales when the limit is reached"
 #: src/components/modals/CreateEventModal/index.tsx:150
 #: src/components/modals/DuplicateEventModal/index.tsx:97
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:92
-#: src/components/routes/welcome/index.tsx:96
+#: src/components/routes/welcome/index.tsx:103
 msgid "End Date"
 msgstr "End Date"
 
@@ -1771,7 +1771,7 @@ msgstr "Fees"
 
 #: src/components/common/QuestionsTable/index.tsx:206
 #: src/components/modals/CreateAttendeeModal/index.tsx:114
-#: src/components/modals/EditAttendeeModal/index.tsx:77
+#: src/components/modals/EditAttendeeModal/index.tsx:89
 #: src/components/routes/ticket-widget/CollectInformation/index.tsx:268
 #: src/components/routes/ticket-widget/CollectInformation/index.tsx:315
 msgid "First name"
@@ -2006,7 +2006,7 @@ msgstr "Homepage Designer"
 msgid "Homepage Preview"
 msgstr "Homepage Preview"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:78
+#: src/components/modals/EditAttendeeModal/index.tsx:90
 msgid "Homer"
 msgstr "Homer"
 
@@ -2190,7 +2190,7 @@ msgid "Last login"
 msgstr "Last login"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:121
-#: src/components/modals/EditAttendeeModal/index.tsx:84
+#: src/components/modals/EditAttendeeModal/index.tsx:96
 msgid "Last name"
 msgstr "Last name"
 
@@ -2220,7 +2220,7 @@ msgstr "Learn more about Stripe"
 #~ msgid "Let's get started by creating your first event"
 #~ msgstr "Let's get started by creating your first event"
 
-#: src/components/routes/welcome/index.tsx:20
+#: src/components/routes/welcome/index.tsx:21
 msgid "Let's get started by creating your first organizer"
 msgstr "Let's get started by creating your first organizer"
 
@@ -2430,7 +2430,7 @@ msgstr "Nam placerat elementum..."
 #: src/components/routes/account/ManageAccount/sections/AccountSettings/index.tsx:63
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:72
 #: src/components/routes/ticket-widget/OrderSummaryAndTickets/index.tsx:58
-#: src/components/routes/welcome/index.tsx:83
+#: src/components/routes/welcome/index.tsx:90
 msgid "Name"
 msgstr "Name"
 
@@ -2564,7 +2564,7 @@ msgstr "Notify buyer of refund"
 msgid "Notify organizer of new orders"
 msgstr "Notify organizer of new orders"
 
-#: src/components/routes/welcome/index.tsx:72
+#: src/components/routes/welcome/index.tsx:79
 msgid "Now let's create your first event"
 msgstr "Now let's create your first event"
 
@@ -2909,7 +2909,7 @@ msgstr "Portuguese"
 msgid "Post Checkout message"
 msgstr "Post Checkout message"
 
-#: src/components/common/PoweredByFooter/index.tsx:28
+#: src/components/common/PoweredByFooter/index.tsx:40
 msgid "Powered by"
 msgstr "Powered by"
 
@@ -3304,7 +3304,7 @@ msgid "Select Ticket"
 msgstr "Select Ticket"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:163
-#: src/components/modals/EditAttendeeModal/index.tsx:117
+#: src/components/modals/EditAttendeeModal/index.tsx:129
 msgid "Select Ticket Tier"
 msgstr "Select Ticket Tier"
 
@@ -3435,7 +3435,7 @@ msgstr "Shown to the customer before they checkout"
 msgid "Shows common address fields, including country"
 msgstr "Shows common address fields, including country"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:85
+#: src/components/modals/EditAttendeeModal/index.tsx:97
 msgid "Simpson"
 msgstr "Simpson"
 
@@ -3443,7 +3443,7 @@ msgstr "Simpson"
 msgid "Single line text box"
 msgstr "Single line text box"
 
-#: src/components/routes/welcome/index.tsx:137
+#: src/components/routes/welcome/index.tsx:144
 msgid "Skip this step"
 msgstr "Skip this step"
 
@@ -3522,7 +3522,7 @@ msgstr "Standard ticket with a fixed price"
 #: src/components/modals/CreateEventModal/index.tsx:145
 #: src/components/modals/DuplicateEventModal/index.tsx:92
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:87
-#: src/components/routes/welcome/index.tsx:90
+#: src/components/routes/welcome/index.tsx:97
 msgid "Start Date"
 msgstr "Start Date"
 
@@ -3601,7 +3601,7 @@ msgstr "Successfully Created Ticket"
 #~ msgid "Successfully deleted ticket"
 #~ msgstr "Successfully deleted ticket"
 
-#: src/components/modals/EditAttendeeModal/index.tsx:60
+#: src/components/modals/EditAttendeeModal/index.tsx:72
 msgid "Successfully updated attendee"
 msgstr "Successfully updated attendee"
 
@@ -3998,7 +3998,7 @@ msgstr "ticket"
 #: src/components/common/AttendeeDetails/index.tsx:46
 #: src/components/common/AttendeeTable/index.tsx:112
 #: src/components/modals/CreateAttendeeModal/index.tsx:146
-#: src/components/modals/EditAttendeeModal/index.tsx:108
+#: src/components/modals/EditAttendeeModal/index.tsx:120
 #: src/components/modals/ViewAttendeeModal/index.tsx:55
 msgid "Ticket"
 msgstr "Ticket"
@@ -4020,7 +4020,7 @@ msgid "Ticket Sales"
 msgstr "Ticket Sales"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:161
-#: src/components/modals/EditAttendeeModal/index.tsx:115
+#: src/components/modals/EditAttendeeModal/index.tsx:127
 msgid "Ticket Tier"
 msgstr "Ticket Tier"
 
@@ -4357,13 +4357,9 @@ msgstr "We're processing your order. Please wait..."
 msgid "Welcome aboard! Please login to continue."
 msgstr "Welcome aboard! Please login to continue."
 
-#: src/components/routes/event/EventDashboard/index.tsx:41
-msgid "Welcome back{0} 👋"
-msgstr "Welcome back{0} 👋"
-
-#: src/components/routes/welcome/index.tsx:125
-msgid "Welcome to Hi.Events, {0} 👋"
-msgstr "Welcome to Hi.Events, {0} 👋"
+#: src/components/routes/welcome/index.tsx:135
+msgid "Welcome to {APP_NAME}, {0} 👋"
+msgstr "Welcome to {APP_NAME}, {0} 👋"
 
 #: src/components/forms/TicketForm/index.tsx:202
 msgid "What are Tiered Tickets?"
@@ -4446,7 +4442,7 @@ msgstr "Working"
 #: src/components/modals/CreateQuestionModal/index.tsx:73
 #: src/components/modals/CreateTicketModal/index.tsx:91
 #: src/components/modals/DuplicateEventModal/index.tsx:137
-#: src/components/modals/EditAttendeeModal/index.tsx:129
+#: src/components/modals/EditAttendeeModal/index.tsx:141
 #: src/components/modals/EditPromoCodeModal/index.tsx:84
 #: src/components/modals/EditQuestionModal/index.tsx:99
 #: src/components/modals/EditTicketModal/index.tsx:104
