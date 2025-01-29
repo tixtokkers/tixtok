@@ -98,6 +98,16 @@ export const App: FC<
                             <ModalsProvider>
                                 <Helmet>
                                     <title>{APP_NAME}</title>
+                                    <link
+                                        rel="apple-touch-icon"
+                                        href="/favicon_180x180.png"
+                                        sizes="180x180"
+                                    />
+                                    <link
+                                        rel="apple-touch-icon"
+                                        href="/favicon_152x152.png"
+                                        sizes="152x152"
+                                    />
                                 </Helmet>
                                 {props.children}
                             </ModalsProvider>
