@@ -60,7 +60,7 @@ const Login = () => {
                     <TextInput
                         {...form.getInputProps("email")}
                         label={t`Email`}
-                        placeholder="hello@tixtok.com"
+                        placeholder="hello@tixtok.co"
                         required
                     />
                     <PasswordInput
